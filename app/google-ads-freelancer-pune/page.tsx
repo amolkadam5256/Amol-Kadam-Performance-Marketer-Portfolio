@@ -1,0 +1,1 @@
+import { SeoLanding } from "@/components/sections/SeoLanding";export const metadata={title:"Google Ads Freelancer Pune"};export default function Page(){return <SeoLanding service="Google Ads Freelancer in Pune"/>}

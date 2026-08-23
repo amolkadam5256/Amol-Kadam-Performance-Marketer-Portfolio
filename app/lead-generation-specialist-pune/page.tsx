@@ -1,0 +1,1 @@
+import { SeoLanding } from "@/components/sections/SeoLanding";export const metadata={title:"Lead Generation Specialist Pune"};export default function Page(){return <SeoLanding service="Lead Generation Specialist in Pune"/>}

@@ -1,0 +1,1 @@
+import { SeoLanding } from "@/components/sections/SeoLanding";export const metadata={title:"Meta Ads Consultant Pune"};export default function Page(){return <SeoLanding service="Meta Ads Consultant in Pune"/>}

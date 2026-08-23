@@ -1,0 +1,1 @@
+import { SeoLanding } from "@/components/sections/SeoLanding";export const metadata={title:"Local SEO Expert Pune"};export default function Page(){return <SeoLanding service="Local SEO Expert in Pune"/>}
