@@ -43,7 +43,11 @@ export function HomeHero() {
   const personY = useTransform(springY, (value) => value * 15);
   const personRotateY = useTransform(springX, (value) => value * 4);
   const personRotateX = useTransform(springY, (value) => value * -3);
-  const personScale = useTransform([springX, springY], ([x, y]) => 1 + Math.min(1, Math.hypot(x, y)) * 0.025);
+  const personScale = useTransform([springX, springY], (values) => {
+    const x = Number(values[0] ?? 0);
+    const y = Number(values[1] ?? 0);
+    return 1 + Math.min(1, Math.hypot(x, y)) * 0.025;
+  });
   const spotlight = useMotionTemplate`radial-gradient(circle at ${lightX}% ${lightY}%, rgba(255,255,255,0.07), transparent 26%)`;
 
   useEffect(() => {
