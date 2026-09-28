@@ -6,13 +6,31 @@ export const site = {
   phoneHref: "tel:+917709266280",
   whatsapp: "917709266280",
   city: "Pune, Maharashtra, India",
-  locality: "Taleranwadi, Pune",
-  linkedin: "https://www.linkedin.com/in/amolkadam77",
+  locality: "Pune",
+  region: "Maharashtra",
+  country: "India",
+  location: "Pune, Maharashtra, India",
+  postalCode: "412207",
+  linkedin: "https://www.linkedin.com/in/amolkadam77/",
   github: "https://github.com/amolkadam5256",
   instagram: "https://www.instagram.com/_amol5256/",
-  title: "Amol Kadam — Performance Marketing & Growth",
-  description: "Performance marketing, SEO and measurement systems for ambitious businesses.",
+  facebook: "https://www.facebook.com/profile.php?id=100084178372823",
+  facebookPage: "https://www.facebook.com/p/Amol-Tukaram-Kadam-100055943003261/",
+  x: "https://x.com/amolkadam1274",
+  title: "Amol Kadam | Performance Marketer, SEO & Digital Marketing Specialist",
+  description: "Amol Kadam is a Pune-based performance marketer specializing in Meta Ads, Google Ads, SEO, analytics, tracking and conversion-focused digital marketing.",
+  languages: ["English", "Hindi", "Marathi"],
+  interests: ["Swimming", "Watching documentaries", "Travelling"],
 } as const;
+
+export const socialProfiles = [
+  { label: "LinkedIn", href: site.linkedin },
+  { label: "Instagram", href: site.instagram },
+  { label: "Facebook", href: site.facebook },
+  { label: "Facebook Page", href: site.facebookPage },
+  { label: "X", href: site.x },
+  { label: "GitHub", href: site.github },
+] as const;
 
 export const whatsappHref = (message?: string) =>
   `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(
@@ -110,28 +128,32 @@ export type Study = {
   results: string;
   learnings: string;
   custom?: boolean;
+  liveUrl?: string;
+  liveLabel?: string;
 };
 
 export const studies: Study[] = [
   {
     slug: "hydrella-beauty-science",
     title: "Hydrella Beauty Science",
-    type: "Google Ads + SEO",
-    summary: "Search visibility and conversion measurement for a beauty science brand.",
+    type: "Freelance · Google Ads + SEO",
+    summary: "SEO audit, keyword research, on-page work and Google Ads with GA4/GTM conversion tracking for a beauty science brand.",
     challenge: "The brand needed commercial search visibility and a measurement setup that could show whether Google Ads and organic pages were creating useful enquiries, not just traffic.",
     strategy: [
-      "SEO audit, keyword research and on-page work on the pages most likely to convert",
-      "Google Ads structure aligned to product and intent, not a single catch-all campaign",
-      "GA4 and GTM conversion events so paid and organic could be read in one operating view",
+      "SEO audit, keyword research, on-page SEO and content optimisation to improve organic visibility",
+      "Google Ads setup aligned to product and search intent",
+      "GA4 and GTM conversion tracking so campaign performance could be monitored in one view",
     ],
-    results: "The useful outcome was a search and measurement system the team could iterate on. Headline lift figures are not published here because they were not independently packaged as a public case.",
+    results: "The engagement produced a search and measurement system the team could iterate on. Headline lift figures are not published here because they were not independently packaged as a public case.",
     learnings: "Beauty search only becomes useful when the query, the page and the conversion event describe the same offer. Tracking has to be in place before creative or keyword scale.",
+    liveUrl: "https://www.instagram.com/hydrellabeautyscience/",
+    liveLabel: "Instagram",
   },
   {
     slug: "real-estate-lead-generation",
     title: "Real Estate Lead Generation",
-    type: "Meta Ads + Tracking",
-    summary: "A tracked lead generation system for property discovery.",
+    type: "Job · Meta Ads",
+    summary: "Meta Ads for lead generation with audience targeting, landing-page optimisation, Meta Pixel, GA4 and GTM.",
     challenge: "Property demand was arriving through ads, but the team needed cleaner targeting, a clearer landing path and tracking that showed what happened after the lead arrived.",
     strategy: [
       "Meta lead-generation campaigns built around location, project and buyer intent",
@@ -144,8 +166,8 @@ export const studies: Study[] = [
   {
     slug: "kokanbag-mango-pulp",
     title: "KokanBag Mango Pulp",
-    type: "Performance + CRM",
-    summary: "WhatsApp-first Meta Ads with CRM follow-up for B2B and retail mango pulp and cashew enquiries.",
+    type: "Job · Performance Marketing",
+    summary: "Meta Ads for B2B and retail mango pulp and cashew lead generation, with Privyr CRM and WhatsApp follow-up.",
     challenge: "A seasonal FMCG offer needed national wholesale and retail demand without form drop-off, plus a CRM process that could qualify juice centres, distributors and home buyers quickly.",
     strategy: [
       "Meta Message campaigns with a WhatsApp CTA instead of a native lead form",
@@ -159,8 +181,8 @@ export const studies: Study[] = [
   {
     slug: "elintom-crm",
     title: "ElintOm CRM",
-    type: "Automation + Outreach",
-    summary: "Segmented email, WhatsApp and LinkedIn lead nurture workflows.",
+    type: "Job · Marketing Automation",
+    summary: "Email, WhatsApp and LinkedIn outreach with CRM automation, audience segmentation and omnichannel lead management.",
     challenge: "Leads were arriving from more than one channel, but follow-up was inconsistent. The business needed segmentation and a nurture path that did not depend on one person remembering to message.",
     strategy: [
       "Segment contacts by source, offer interest and conversation stage",
@@ -430,7 +452,7 @@ export const homepageResults = [
     color: "blue",
     barValues: [40, 70, 55, 88, 62, 95, 100],
     barColor: "#7a9c8e",
-    href: "/case-studies/kokanbag-mango-pulp",
+    href: "/work/kokanbag-mango-pulp",
   },
   {
     metric: "~₹13",
@@ -440,7 +462,7 @@ export const homepageResults = [
     color: "orange",
     barValues: [28, 44, 38, 60, 52, 78, 90],
     barColor: "#d89f67",
-    href: "/case-studies/kokanbag-mango-pulp",
+    href: "/work/kokanbag-mango-pulp",
   },
   {
     metric: "20+",
@@ -450,27 +472,109 @@ export const homepageResults = [
     color: "green",
     barValues: [22, 40, 35, 58, 50, 72, 86],
     barColor: "#8fb676",
-    href: "/case-studies/kokanbag-mango-pulp",
+    href: "/work/kokanbag-mango-pulp",
   },
 ];
 
+export const careerTimeline = [
+  {
+    date: "June 2026 — Present",
+    company: "Sateri Digital",
+    companyHref: "https://www.linkedin.com/company/sateri-digital/",
+    role: "Digital Marketing Executive (Media Buyer)",
+    location: "",
+    description: "Meta Ads for FMCG, retail and SaaS; Privyr CRM and WhatsApp lead management; email, WhatsApp and LinkedIn outreach; ElintOm CRM automation.",
+    items: [
+      "Managed Meta Ads campaigns for clients across FMCG, retail and SaaS, including lead generation, remarketing and conversion campaigns.",
+      "Planned and optimised campaigns for mango pulp and cashew, focusing on audience targeting, creatives and lead generation.",
+      "Managed leads using Privyr CRM and WhatsApp, coordinated with sales teams, and improved follow-up through automation workflows.",
+      "Executed email marketing, WhatsApp marketing and LinkedIn outreach campaigns to generate and nurture B2B leads.",
+      "Supported marketing automation and omnichannel engagement for ElintOm CRM, including tracking, segmentation and reporting.",
+    ],
+  },
+  {
+    date: "May 2025 — June 2026",
+    company: "Majestic Realties",
+    companyHref: "https://www.linkedin.com/company/majesticrealties/",
+    role: "Digital Marketing & Web Executive",
+    location: "Pune, Maharashtra",
+    description: "Meta Ads for real estate, SEO, WordPress/Elementor/React/Next.js landing pages, Meta Pixel, GTM, GA4, and social content production.",
+    items: [
+      "Managed Meta Ads campaigns including lead generation, traffic, reach and engagement for real estate projects, open plots and residential properties.",
+      "Performed SEO, including keyword research, on-page SEO, content optimisation and landing-page optimisation.",
+      "Built and optimised real estate websites and landing pages using WordPress, Elementor, React.js and Next.js.",
+      "Configured Meta Business Manager, Meta Pixel, Google Tag Manager and Google Analytics 4 for conversion and event tracking.",
+      "Created social media content, planned and assisted in reel shoots, and edited with Canva, CapCut and Adobe Photoshop.",
+    ],
+  },
+  {
+    date: "Part-Time",
+    company: "Shabdbramhand Co",
+    companyHref: "https://www.shabdbramhandco.com",
+    role: "Web Developer & SEO Specialist",
+    location: "Pune, Maharashtra",
+    description: "Responsive websites and landing pages in HTML, CSS, JavaScript and Tailwind CSS, plus on-page, technical and local SEO.",
+    items: [
+      "Developed responsive websites and landing pages using HTML, CSS, JavaScript and Tailwind CSS.",
+      "Handled SEO including on-page, technical, local, keyword research and website optimisation.",
+    ],
+  },
+] as const;
+
+export const education = [
+  {
+    title: "Master of Science in Computer Science",
+    detail: "Bharati Vidyapeeth Deemed University · Pursuing, Sep 2025 — Present",
+  },
+  {
+    title: "Bachelor of Science in Computer Science",
+    detail: "Bharati Vidyapeeth Deemed University · Sep 2022 — Jul 2025",
+  },
+] as const;
+
+export const certifications = [
+  {
+    title: "Meta Advertising Certification",
+    detail: "IIDE — The Digital School · Meta Ads, audience targeting, Meta Pixel and conversion tracking",
+    href: "https://drive.google.com/file/d/15bHHqUw-bdM8e1GrcyRmC4P_6K4qQtZm/view?usp=sharing",
+  },
+  {
+    title: "CSMS-DEEP Diploma",
+    detail: "Digital education and professional development focused on web and content creation",
+    href: "https://drive.google.com/drive/folders/1u-LEw7LO7XRSDpxKzhB57LxNWEbmcOFY?usp=sharing",
+  },
+] as const;
+
+export const skillGroups = [
+  {
+    title: "Media & measurement",
+    items: ["Meta Ads Manager", "Google Ads (Search, Display, Performance Max)", "Media buying", "Lead generation", "Campaign optimisation", "Audience targeting", "Remarketing", "Meta Pixel", "Conversion tracking", "UTM tracking", "GA4", "GTM", "Looker Studio", "Meta Events Manager"],
+  },
+  {
+    title: "CRM & outreach",
+    items: ["Privyr CRM", "ElintOm CRM", "WhatsApp marketing", "Email marketing", "LinkedIn outreach", "Lead management", "Audience segmentation", "Marketing automation"],
+  },
+  {
+    title: "Search, web & creative",
+    items: ["On-page SEO", "Technical SEO", "Local SEO", "Keyword research", "Google Search Console", "SEMrush", "Ahrefs", "WordPress", "Elementor", "Amazon product listings", "Flipkart Seller", "HTML5", "CSS3", "JavaScript", "React.js", "Next.js", "Tailwind CSS", "Git", "VS Code", "Vercel", "Canva", "Adobe Photoshop", "CapCut", "AI design tools"],
+  },
+] as const;
+export const freelanceStudies = studies.filter((study) => study.type.startsWith("Freelance"));
+export const jobStudies = studies.filter((study) => study.type.startsWith("Job"));
+
 export const navLinks = [
-  { label: "Work", href: "/case-studies" },
-  { label: "About", href: "/about-amol-kadam" },
-  { label: "Services", href: "/services" },
+  { label: "Work", href: "/work" },
+  { label: "Freelance", href: "/freelance" },
+  { label: "Journey", href: "/journey" },
+  { label: "About", href: "/about" },
   { label: "Insights", href: "/blog" },
 ] as const;
 
 export const navMenus = [
   {
-    label: "Services",
-    href: "/services",
-    items: services.map((s) => [s.name, s.href] as [string, string]),
-  },
-  {
-    label: "Case Studies",
-    href: "/case-studies",
-    items: studies.map((s) => [s.title, `/case-studies/${s.slug}`] as [string, string]),
+    label: "Work",
+    href: "/work",
+    items: studies.map((s) => [s.title, `/work/${s.slug}`] as [string, string]),
   },
   {
     label: "Resources",
@@ -488,22 +592,26 @@ export const navMenus = [
 
 export const sitemapPaths = [
   "",
+  "/about",
+  "/journey",
+  "/experience",
+  "/freelance",
+  "/resume",
   "/services",
-  ...services.map((s) => s.href),
-  "/case-studies",
-  ...studies.map((s) => `/case-studies/${s.slug}`),
-  "/industries",
-  ...industries.map((s) => `/industries/${s.slug}`),
-  ...seoLandings.map((s) => `/${s.slug}`),
+  ...services.map((s) => `/services/${s.slug}`),
+  "/work",
+  ...studies.map((s) => `/work/${s.slug}`),
+  "/results",
+  "/blog",
+  ...articles.map((s) => `/blog/${s.slug}`),
+  "/contact",
+  "/testimonials",
   "/resources",
   "/creative-library",
   "/experiments",
-  "/results",
-  "/testimonials",
-  "/blog",
-  ...articles.map((s) => `/blog/${s.slug}`),
-  "/about-amol-kadam",
-  "/contact",
+  "/industries",
+  ...industries.map((s) => `/industries/${s.slug}`),
+  ...seoLandings.map((s) => `/${s.slug}`),
   "/privacy-policy",
   "/terms-and-conditions",
 ];

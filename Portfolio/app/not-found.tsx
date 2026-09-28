@@ -12,8 +12,8 @@ export default function NotFound() {
           <EditorialButton href="/" tone="cream">
             Back home
           </EditorialButton>
-          <EditorialButton href="/contact" tone="ghost">
-            Contact Amol
+          <EditorialButton href="/work" tone="ghost">
+            View work
           </EditorialButton>
         </div>
       </div>

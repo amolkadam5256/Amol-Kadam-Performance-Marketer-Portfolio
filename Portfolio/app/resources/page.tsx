@@ -2,6 +2,7 @@ import { PageHeader } from "@/components/common/PageHeader";
 import { CTA } from "@/components/common/CTA";
 import { Reveal } from "@/components/ui/Reveal";
 import { ServiceRow } from "@/components/ui/ServiceRow";
+import { pageMeta } from "@/lib/seo";
 
 const resources = [
   ["Creative Library", "Creative intelligence", "Reference examples of hooks, offers, formats and conversion ideas.", "/creative-library"],
@@ -12,11 +13,11 @@ const resources = [
   ["Testimonials", "Feedback", "A dedicated place for client and collaborator feedback.", "/testimonials"],
 ] as const;
 
-export const metadata = {
-  title: "Marketing Resources",
+export const metadata = pageMeta({
+  title: "Marketing Resources | Amol Kadam",
   description: "Creative patterns, experiments, results, industries and writing from Amol Kadam’s growth practice.",
-  alternates: { canonical: "/resources" },
-};
+  path: "/resources",
+});
 
 export default function Resources() {
   return (

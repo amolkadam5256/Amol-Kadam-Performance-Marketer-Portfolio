@@ -1,14 +1,15 @@
-import type { Metadata } from "next";
 import Link from "next/link";
+import { Breadcrumb } from "@/components/common/Breadcrumb";
 import { PageHeader } from "@/components/common/PageHeader";
 import { Reveal } from "@/components/ui/Reveal";
 import { industries } from "@/data/site";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Industries",
+export const metadata = pageMeta({
+  title: "Industries | Amol Kadam Performance Marketing",
   description: "Performance marketing approaches for healthcare, real estate, ecommerce and local businesses.",
-  alternates: { canonical: "/industries" },
-};
+  path: "/industries",
+});
 
 export default function Industries() {
   return (
@@ -18,6 +19,7 @@ export default function Industries() {
         title="Growth systems adapted to the market."
         description="The channel may be familiar. The buyer, sales process, trust signals and conversion path are always specific."
       />
+      <Breadcrumb items={[{ label: "Industries", href: "/industries" }]} />
       <section className="ed-section">
         <div className="ed-wrap ed-work-grid">
           {industries.map((item, index) => (

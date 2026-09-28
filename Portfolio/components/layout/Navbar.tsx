@@ -69,7 +69,7 @@ export function Navbar() {
           aria-expanded={open}
           aria-label={open ? "Close navigation" : "Open navigation"}
         >
-          {open ? <X size={18} /> : <Menu size={18} />}
+          {open ? <X size={22} /> : <Menu size={22} />}
         </button>
       </nav>
 

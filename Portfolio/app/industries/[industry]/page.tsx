@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { Breadcrumb } from "@/components/common/Breadcrumb";
 import { CTA } from "@/components/common/CTA";
 import { FAQ } from "@/components/common/FAQ";
 import { PageHeader } from "@/components/common/PageHeader";
 import { industries } from "@/data/site";
+import { pageMeta } from "@/lib/seo";
 
 export function generateStaticParams() {
   return industries.map((industry) => ({ industry: industry.slug }));
@@ -13,11 +15,11 @@ export async function generateMetadata({ params }: { params: Promise<{ industry:
   const { industry } = await params;
   const entry = industries.find((item) => item.slug === industry);
   if (!entry) return {};
-  return {
-    title: `${entry.name} marketing`,
+  return pageMeta({
+    title: `${entry.name} Marketing | Amol Kadam`,
     description: entry.blurb,
-    alternates: { canonical: `/industries/${entry.slug}` },
-  };
+    path: `/industries/${entry.slug}`,
+  });
 }
 
 export default async function Industry({ params }: { params: Promise<{ industry: string }> }) {
@@ -28,6 +30,12 @@ export default async function Industry({ params }: { params: Promise<{ industry:
   return (
     <>
       <PageHeader eyebrow="Industry focus" title={entry.name} description={entry.blurb} />
+      <Breadcrumb
+        items={[
+          { label: "Industries", href: "/industries" },
+          { label: entry.name, href: `/industries/${entry.slug}` },
+        ]}
+      />
       <section className="ed-wrap ed-detail">
         <article>
           <h2>Common challenge</h2>

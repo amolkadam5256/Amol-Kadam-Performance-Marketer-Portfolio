@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
 import { PageHeader } from "@/components/common/PageHeader";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Terms & Conditions",
+export const metadata = pageMeta({
+  title: "Terms & Conditions | Amol Kadam",
   description: "Terms for using Amol Kadam’s website and portfolio materials.",
-  alternates: { canonical: "/terms-and-conditions" },
-};
+  path: "/terms-and-conditions",
+});
 
 export default function Terms() {
   return (

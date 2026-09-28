@@ -5,186 +5,114 @@ import { motion } from "framer-motion";
 export const defaultFaqs: [string, string][] = [
   [
     "Who is Amol Kadam?",
-    "Amol Kadam is an independent performance marketing partner and growth specialist based in Pune, India. He helps ambitious businesses scale through Meta Ads, Google Ads, SEO, Local SEO, custom conversion tracking (GA4/GTM), landing page optimization, and end-to-end growth consulting."
+    "Amol Kadam is a Pune-based digital marketer and performance marketer specializing in paid advertising, SEO, analytics and conversion tracking.",
   ],
   [
-    "What digital marketing and growth services does Amol Kadam provide in Pune?",
-    "Services include full-funnel Meta Ads (Facebook & Instagram), high-intent Google Search & Shopping Ads, technical and content SEO, Local SEO for Pune businesses, Server-side & CAPI tracking (GA4, GTM, Meta Pixel), custom landing page development (Next.js, React, WordPress), and growth auditing."
+    "What does Amol Kadam do?",
+    "Amol Kadam works on Meta Ads, Google Ads, SEO, analytics, tracking, lead generation and conversion-focused marketing.",
   ],
   [
-    "Is Amol Kadam available as a Meta Ads freelancer and consultant in Pune?",
-    "Yes. Amol works with growth-focused businesses in Pune and globally to build Meta Ads campaigns targeting qualified leads and direct sales. Work covers creative direction, audience architecture, lead forms, custom conversion pixel setup, and ongoing campaign optimization."
+    "Where is Amol Kadam based?",
+    "Amol Kadam is based in Pune, Maharashtra, India.",
   ],
   [
-    "How does Amol manage high-converting Google Ads campaigns?",
-    "Google Ads management focuses on capturing high-intent commercial demand. This includes keyword selection, negative keyword curation, ad copy testing, smart bidding strategies, landing page alignment, conversion tracking, and continuous cost-per-lead (CPL) reduction."
+    "Does Amol Kadam work as a freelancer?",
+    "Yes. Amol Kadam works on freelance and consulting projects alongside professional marketing work.",
   ],
   [
-    "Can Amol help with SEO, Local SEO, and Google Business Profile optimization in Pune?",
-    "Yes. Local and organic SEO strategies focus on ranking Pune-based businesses for high-intent local search queries. This involves Google Business Profile optimization, technical SEO audits, site speed tuning, on-page keyword targeting, and local citation building."
+    "What tools does Amol Kadam use?",
+    "His marketing toolkit includes Meta Ads Manager, Google Ads, GA4, GTM, Looker Studio, SEO tools, WordPress, Elementor and web technologies such as React and Next.js.",
   ],
   [
-    "What industries does Amol Kadam specialize in?",
-    "Amol has driven growth across real estate, e-commerce, B2B SaaS, healthcare & skincare, local services, education, FMCG, and digital agencies across India and international markets."
+    "What is Amol Kadam’s professional experience?",
+    "He has worked as a Digital Marketing Executive (Media Buyer) at Sateri Digital, as a Digital Marketing & Web Executive at Majestic Realties, and part-time as a Web Developer & SEO Specialist at Shabdbramhand Co.",
   ],
   [
-    "Does Amol handle technical analytics setup including GA4, GTM, and Meta Pixel?",
-    "Yes. Reliable data is the backbone of scaling. Amol configures Google Analytics 4 (GA4), Google Tag Manager (GTM), Meta Conversions API (CAPI), custom conversion events, UTM parameters, and looker studio dashboards to provide accurate attribution."
+    "How can someone contact Amol Kadam?",
+    "Use the contact form, email amolkadam1274@gmail.com, call or WhatsApp +91 7709266280. Pune, Maharashtra, India.",
   ],
-  [
-    "Can Amol design and build high-converting landing pages using Next.js, React, or WordPress?",
-    "Yes. High ad spend fails without effective landing pages. Amol designs and builds lightning-fast, mobile-optimized landing pages with compelling copy, social proof, and seamless form integrations built on Next.js, React, or WordPress."
-  ],
-  [
-    "How does performance marketing consulting differ from hiring a traditional agency?",
-    "Unlike traditional agencies that delegate work to junior account managers, working directly with Amol gives you founder-level attention, faster iteration cycles, direct access to campaign data, and customized strategies tailored to your unit economics."
-  ],
-  [
-    "Does Amol work with businesses outside Pune or internationally?",
-    "Yes. While physically based in Pune, Maharashtra, Amol works remotely with companies across India, UAE, US, UK, and APAC regions using async updates, video consultations, and transparent live dashboards."
-  ],
-  [
-    "How do you measure ROAS, Customer Acquisition Cost (CAC), and lead quality?",
-    "Campaign performance is evaluated beyond vanity impressions. Amol measures true return on ad spend (ROAS), verified qualified leads, cost per acquisition (CPA), and pipeline conversion rate by connecting ad platforms to CRM lead outcome data."
-  ],
-  [
-    "What preparation or details are needed before booking a growth consultation?",
-    "Sharing your business model, current monthly marketing spend, target customer profile, existing website/landing page links, and primary revenue goals helps ensure the initial 30-minute discovery call provides immediate actionable insights."
-  ],
-  [
-    "What pricing structures, monthly retainers, or project models are available?",
-    "Engagements are structured flexibly based on project requirements—ranging from fixed-scope technical audits and landing page builds to monthly performance retainers and revenue-growth consulting."
-  ],
-  [
-    "How can I contact Amol Kadam to start a campaign or request an audit?",
-    "You can reach Amol directly via email at amolkadam1274@gmail.com, call/WhatsApp at +91 7709266280, or book a consultation via the contact form on this website. Responses are typically provided within 24 hours."
-  ]
 ];
 
 export const metaAdsFaqs: [string, string][] = [
   [
-    "How do Meta Ads (Facebook & Instagram) drive qualified leads for Pune businesses?",
-    "Meta Ads use granular demographical, interest-based, and behavioral targeting combined with high-converting creative formats (video ads, carousels, instant lead forms). Amol builds full-funnel architectures that filter for purchase intent rather than empty clicks."
+    "How does Amol Kadam run Meta Ads?",
+    "Campaigns are built around the offer, the audience and a capture path — WhatsApp, a form or a landing page — then judged by lead quality, not clicks alone.",
   ],
   [
-    "What is your technical process for Meta Conversions API (CAPI) and Pixel setup?",
-    "Server-side Meta Conversions API (CAPI) is integrated alongside Google Tag Manager (GTM) to bypass iOS 14.5+ ad blockers and browser privacy restrictions. This restores lost conversion attribution and trains Meta's algorithm on verified purchase data."
+    "Do you set up Meta Pixel tracking?",
+    "Yes. Pixel and event review sits with campaign work so Meta is not trained on empty clicks.",
   ],
   [
-    "How do you test and scale Meta ad creatives without ad fatigue or rising CPL?",
-    "Creative testing relies on modular frameworks—testing hooks, offer angles, visual assets, and primary text variations systematically. High-performing winning ad combinations are scaled horizontally into lookalike audiences and dynamic creative budgets."
+    "When is WhatsApp used instead of a lead form?",
+    "When the buyer prefers a conversation — as on the published KokanBag mango pulp campaign — Message ads can reduce form drop-off. The choice follows the offer, not a template.",
   ],
-  [
-    "What is the difference between Meta Native Lead Forms vs Landing Page Conversions?",
-    "Native Instant Forms deliver higher volume at lower CPL for real estate and local services, while custom landing pages qualify high-ticket B2B/SaaS leads with detailed questionnaires. Amol tests both formats to find your ideal balance of volume and lead score."
-  ],
-  [
-    "How do custom remarketing and lookalike audiences boost Meta Ads ROAS?",
-    "By segmenting website visitors, video viewers, and past lead contacts, tailored retargeting ads address specific customer objections. Lookalike audiences generated from high-value customer CRMs enable Meta's algorithm to acquire similar high-intent buyers."
-  ],
-  [
-    "What monthly ad spend is recommended for Meta Ads campaigns in Pune and India?",
-    "For local lead generation in Pune, testing starts effectively around ₹20,000–₹50,000/month. For pan-India scaling or e-commerce ROAS campaigns, budgets scale dynamically once profitable cost-per-acquisition (CPA) benchmarks are validated."
-  ]
 ];
 
 export const googleAdsFaqs: [string, string][] = [
   [
-    "Why hire a specialized Google Ads freelancer in Pune instead of a digital marketing agency?",
-    "Working directly with Amol guarantees senior-level campaign strategy, direct search query optimization, faster iteration cycles, and full account ownership without bloated agency overheads or junior account manager delegation."
+    "How does Amol Kadam manage Google Ads?",
+    "Search campaigns focus on commercial queries, page alignment, negatives and conversion tracking before spend is increased.",
   ],
   [
-    "How do you optimize Google Search Intent keywords to eliminate wasted ad spend?",
-    "Campaigns focus exclusively on high-intent commercial keywords (e.g., 'buy', 'services near me', 'best provider in Pune'). Broad match trap keywords are strictly audited, and extensive negative keyword lists prevent irrelevantly spent budget."
+    "Do you work on conversion tracking for Google Ads?",
+    "Yes. GA4 and Google Tag Manager events are checked so bidding is not optimising for the wrong action.",
   ],
   [
-    "What is your strategy for negative keywords and Google Quality Score optimization?",
-    "Quality Scores directly dictate ad cost per click (CPC). By aligning ad copy, tightly themed keyword ad groups (SKAGs/STAGs), and lightning-fast landing page relevance, Quality Scores increase to 8–10/10, significantly reducing click costs."
+    "Is Performance Max always included?",
+    "Only when conversion events and assets are clear. It is not used to hide a weak offer or broken measurement.",
   ],
-  [
-    "Do you manage Google Shopping, Performance Max (PMax), and Remarketing campaigns?",
-    "Yes. E-commerce and retail brands utilize Google Shopping and Performance Max campaigns powered by custom asset groups, negative audience exclusions, and feed optimization to capture buyers across Search, YouTube, Gmail, and Display."
-  ],
-  [
-    "How do you track offline conversions and CRM lead outcomes from Google Ads?",
-    "Google Ads conversion tracking is linked directly with Google Tag Manager, GA4, and CRM systems (Privyr, Salesforce, HubSpot). This allows bid strategies (tCPA, tROAS) to optimize for closed revenue rather than unverified form submits."
-  ],
-  [
-    "What timeframe is required to see profitable ROAS from Google Ads campaigns?",
-    "Initial keyword discovery and Quality Score calibration take 2–3 weeks. Once negative keywords are filtered and high-converting search terms are isolated, campaigns typically achieve target CPL and ROAS within 30 to 60 days."
-  ]
 ];
 
 export const seoFaqs: [string, string][] = [
   [
-    "How does Local SEO help Pune businesses dominate Google Map Pack and local search?",
-    "Local SEO optimizes your Google Business Profile (GBP), builds location-relevant citations, targets geo-targeted keywords (e.g., 'SEO consultant in Pune'), and collects verified customer reviews, securing top 3 positions in local Map Packs."
+    "What SEO work does Amol Kadam do?",
+    "Technical SEO, on-page optimisation, keyword research, internal linking and content planning tied to pages that can convert.",
   ],
   [
-    "What technical SEO audits are conducted for site speed, crawling, and Core Web Vitals?",
-    "Technical SEO audits inspect crawl errors, XML sitemaps, robots.txt, canonical tags, structured schema markup, mobile responsiveness, and Core Web Vitals (LCP, INP, CLS) to maximize Google indexing efficiency."
+    "Do you work on local SEO in Pune?",
+    "Yes. Local SEO covers Google Business Profile, local pages and consistent business information for nearby discovery.",
   ],
   [
-    "How do you conduct commercial keyword research for organic traffic growth?",
-    "Keyword research targets high-intent search terms with commercial intent rather than vanity search volume. Competitor content gaps and searcher intent categories (Informational, Commercial, Transactional) guide the content strategy."
+    "How long does SEO take?",
+    "Timelines depend on the site, competition and current technical state. No page-one ranking is promised on a fixed calendar.",
   ],
-  [
-    "How long does it take for an SEO campaign to achieve Page 1 Google rankings in Pune?",
-    "Local SEO and low-competition keywords often reach Google Page 1 within 60 to 90 days. High-competition organic industry keywords typically require 4 to 6 months of continuous technical optimization and authoritative content authority."
-  ],
-  [
-    "How do on-page content strategy and internal linking drive organic conversions?",
-    "Content is structured with clear H1-H3 hierarchy, semantic entities, schema markup, and clear calls-to-action (CTAs). Internal linking routes link equity directly to revenue-generating service pages and contact forms."
-  ]
 ];
 
 export const analyticsFaqs: [string, string][] = [
   [
-    "Why is custom GA4 and Google Tag Manager (GTM) tracking required before scaling ad spend?",
-    "Scaling ad spend without precise analytics is like driving blind. GTM and GA4 configuration establishes single-source-of-truth attribution, identifying exactly which ad creative, keyword, or campaign generates profitable customer revenue."
+    "What analytics setup does Amol Kadam provide?",
+    "GA4, Google Tag Manager, Meta Pixel, UTM conventions and reporting that can separate qualified, invalid and uncontacted leads where the CRM allows it.",
   ],
   [
-    "What server-side tracking and Meta Conversions API (CAPI) setups do you implement?",
-    "Server-side tagging routes user events directly through a secure cloud server to Meta CAPI, Google Ads, and GA4. This restores 20–30% of lost browser conversion data caused by ad blockers, Safari ITP, and iOS privacy features."
+    "Why fix tracking before scaling ads?",
+    "If the conversion event is wrong, more budget teaches the algorithm faster mistakes.",
   ],
-  [
-    "How do custom UTM parameters and Looker Studio dashboards improve campaign visibility?",
-    "Standardized UTM naming conventions track campaign, source, medium, ad set, and creative ID. Custom Looker Studio dashboards synthesize ad spend, leads, ROAS, and cost-per-lead into an interactive single-page view."
-  ],
-  [
-    "Can you fix broken tracking pixels, iOS 14.5 attribution gaps, and duplicate event counts?",
-    "Yes. Amol audits existing tracking code to remove duplicate triggers, fix unverified domain settings, repair broken event parameters, and re-establish accurate conversion value reporting."
-  ]
 ];
 
 export const webDevFaqs: [string, string][] = [
   [
-    "Why do custom Next.js and React landing pages convert better than standard WordPress themes?",
-    "Next.js and React produce server-side rendered (SSR) or statically generated (SSG) pages that load in under 1 second. Zero layout shift, instant page responses, and custom interactive UI components increase conversion rates significantly."
+    "Does Amol Kadam build landing pages?",
+    "Yes. Pages are built with WordPress, Elementor, React or Next.js so the ad, the offer and the next step match.",
   ],
   [
-    "What Conversion Rate Optimization (CRO) principles are engineered into landing pages?",
-    "Landing pages utilize high-contrast CTA placement, directional visual cues, trust badges, sticky contact buttons, mobile-optimized form layouts, social proof carousels, and minimal cognitive load messaging."
+    "Is web development the main service?",
+    "No. Development supports performance marketing: a conversion path that can be measured.",
   ],
-  [
-    "Are your custom landing pages pre-configured with GA4, GTM, and Meta Pixel tracking?",
-    "Yes. Every landing page build includes pre-tested Google Tag Manager containers, Meta Pixel event triggers, lead form submission events, click-to-call tracking, and WhatsApp button analytics out of the box."
-  ]
 ];
 
 export const resultsFaqs: [string, string][] = [
   [
-    "How transparent is your performance reporting and analytics dashboard?",
-    "Clients receive 24/7 access to live Looker Studio dashboards and structured weekly status reports detailing ad spend, impressions, clicks, leads, verified lead quality, CPL, and ROAS metrics."
+    "Which results are published?",
+    "The public scoreboard is the KokanBag WhatsApp campaign: 1,714 conversations from ₹22,338 Meta spend, June to 20 August 2026. Other studies stay qualitative unless a complete dataset is available.",
   ],
   [
-    "What key performance indicators (KPIs) do you prioritize during a growth campaign?",
-    "While agencies focus on vanity reach or impressions, Amol prioritizes bottom-line commercial metrics: Cost Per Qualified Lead (CPL), Customer Acquisition Cost (CAC), Conversion Rate %, and Return on Ad Spend (ROAS)."
+    "What does “lead” mean on this site?",
+    "For KokanBag, a lead is an inbound WhatsApp conversation counted in the campaign period. Qualified, uncontacted and not-qualified statuses are reported separately.",
   ],
   [
-    "How is blended ROAS calculated across Meta Ads, Google Ads, and organic search?",
-    "Blended ROAS divides total marketing-generated revenue by total combined ad spend across all paid channels, providing a holistic view of overall marketing profitability."
-  ]
+    "Where do the KokanBag numbers come from?",
+    "They come from the campaign reporting period and CRM tagging described in the case study — not from estimates.",
+  ],
 ];
 
 interface FAQProps {
@@ -196,9 +124,9 @@ interface FAQProps {
 
 export function FAQ({
   items = defaultFaqs,
-  title = "Questions businesses ask before they scale.",
+  title = "Questions people ask about Amol Kadam.",
   eyebrow = "FREQUENTLY ASKED QUESTIONS",
-  description = "Clear, honest answers about performance marketing, Meta Ads, Google Ads, SEO, conversion tracking, and growth consulting.",
+  description = "Direct answers about who Amol Kadam is, what he works on, and how to get in touch.",
 }: FAQProps) {
   const faqSchema = {
     "@context": "https://schema.org",

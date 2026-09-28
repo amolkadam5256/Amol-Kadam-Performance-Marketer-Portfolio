@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import { PageHeader } from "@/components/common/PageHeader";
 import { CTA } from "@/components/common/CTA";
 import { experiments } from "@/data/site";
 
-export const metadata: Metadata = {
-  title: "Marketing Experiments",
+export const metadata = pageMeta({
+  title: "Marketing Experiments | Amol Kadam",
   description: "Structured tests on creative format, audience design and messaging — written as operating notes, not invented winners.",
-  alternates: { canonical: "/experiments" },
-};
+  path: "/experiments",
+});
 
 export default function Experiments() {
   return (

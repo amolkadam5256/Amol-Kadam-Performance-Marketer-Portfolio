@@ -1,29 +1,29 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Camera, Code2, Mail, MessageCircle, Phone } from "lucide-react";
+import { SocialLinks } from "@/components/common/SocialLinks";
 import { EditorialButton } from "@/components/ui/EditorialButton";
-import { industries, services, site, studies } from "@/data/site";
+import { site, studies } from "@/data/site";
 
-const serviceLinks: [string, string][] = [
-  ...services.map((s) => [s.name, s.href] as [string, string]),
-  ["Lead Generation", "/lead-generation-specialist-pune"],
-  ["Marketing Consulting", "/contact"],
+const workLinks: [string, string][] = [
+  ...studies.map((study) => [study.title, `/work/${study.slug}`] as [string, string]),
+  ["All work", "/work"],
 ];
 
-const studyLinks: [string, string][] = [
-  ...studies.map((s) => [s.title, `/case-studies/${s.slug}`] as [string, string]),
-  ...industries.map((s) => [`${s.name} marketing`, `/industries/${s.slug}`] as [string, string]),
+const exploreLinks: [string, string][] = [
+  ["About", "/about"],
+  ["Journey", "/journey"],
+  ["Freelance", "/freelance"],
+  ["Services", "/services"],
+  ["Contact", "/contact"],
 ];
 
 const resourceLinks: [string, string][] = [
-  ["Blog & insights", "/blog"],
-  ["Results dashboard", "/results"],
+  ["Insights", "/blog"],
+  ["Results", "/results"],
   ["Experiments", "/experiments"],
   ["Creative library", "/creative-library"],
-  ["About Amol", "/about-amol-kadam"],
-  ["Contact", "/contact"],
-  ["Privacy policy", "/privacy-policy"],
-  ["Terms & conditions", "/terms-and-conditions"],
+  ["Resume", "/resume"],
+  ["Experience", "/experience"],
 ];
 
 export function Footer() {
@@ -35,66 +35,48 @@ export function Footer() {
             <p className="ed-kicker">Ready to grow</p>
             <h2>Bring the brief. I’ll bring the system.</h2>
           </div>
-          <div>
+          <div className="footer-cta-actions">
             <EditorialButton href="/contact" tone="ink">
               Book a consultation
             </EditorialButton>
-            <Link className="text-link" href="/case-studies">
+            <Link className="text-link" href="/work">
               View work
             </Link>
           </div>
         </div>
+
         <div className="footer-columns">
           <div className="footer-brand">
             <Link className="brand" href="/">
               <Image src="/logo.png" alt="" width={36} height={36} />
-              AMOL
+              AMOL KADAM
             </Link>
-            <p>
-              Performance marketer
-              <br />
-              SEO specialist
-              <br />
-              Growth consultant
+            <p className="footer-role">Performance Marketer · SEO · Growth</p>
+            <p className="footer-blurb">
+              Meta Ads, Google Ads, SEO, analytics and conversion systems — judged by qualified pipeline.
             </p>
-            <p>Meta Ads, Google Ads, SEO, analytics and conversion systems — judged by qualified pipeline.</p>
-            <p>{site.city}</p>
-            <p>
+            <address className="footer-contact">
+              <span>{site.location}</span>
               <a href={site.phoneHref}>{site.phone}</a>
-              <br />
               <a href={`mailto:${site.email}`}>{site.email}</a>
-            </p>
-            <b>Open for freelance, consulting and the right full-time brief.</b>
+            </address>
+            <SocialLinks variant="profiles" />
+            <p className="footer-open">Open for freelance, consulting and full-time briefs.</p>
           </div>
-          <FooterColumn title="Services" links={serviceLinks} />
-          <FooterColumn title="Work" links={studyLinks} />
+          <FooterColumn title="Work" links={workLinks} />
+          <FooterColumn title="Explore" links={exploreLinks} />
           <FooterColumn title="Resources" links={resourceLinks} />
         </div>
-        <div className="footer-social">
-          <div>
-            <a href={site.linkedin} aria-label="LinkedIn" title="LinkedIn">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12M7.12 20.45H3.56V9h3.56zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0" />
-              </svg>
-            </a>
-            <a href={site.github} aria-label="GitHub" title="GitHub">
-              <Code2 size={16} />
-            </a>
-            <a href={site.instagram} aria-label="Instagram" title="Instagram">
-              <Camera size={16} />
-            </a>
-            <a href={`https://wa.me/${site.whatsapp}`} aria-label="WhatsApp" title="WhatsApp">
-              <MessageCircle size={16} />
-            </a>
-            <a href={site.phoneHref} aria-label="Call Amol" title="Call">
-              <Phone size={16} />
-            </a>
-            <a href={`mailto:${site.email}`} aria-label="Email Amol" title="Email">
-              <Mail size={16} />
-            </a>
-          </div>
-          <p>© 2026 Amol Kadam · <a href="https://growthikmedia.com">Growthik Media</a></p>
-          <p>{site.city}</p>
+
+        <div className="footer-bar">
+          <p>
+            © 2026 Amol Kadam · Site produced with{" "}
+            <a href="https://growthikmedia.com">Growthik Media</a>
+          </p>
+          <nav className="footer-legal" aria-label="Legal">
+            <Link href="/privacy-policy">Privacy</Link>
+            <Link href="/terms-and-conditions">Terms</Link>
+          </nav>
         </div>
       </div>
     </footer>
@@ -106,7 +88,7 @@ function FooterColumn({ title, links }: { title: string; links: [string, string]
     <div className="footer-column">
       <p>{title}</p>
       {links.map(([label, href]) => (
-        <Link key={label} href={href}>
+        <Link key={`${label}-${href}`} href={href}>
           {label}
         </Link>
       ))}

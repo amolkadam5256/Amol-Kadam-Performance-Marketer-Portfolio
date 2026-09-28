@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
 import { PageHeader } from "@/components/common/PageHeader";
 import { site } from "@/data/site";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy",
+export const metadata = pageMeta({
+  title: "Privacy Policy | Amol Kadam",
   description: "How Amol Kadam handles enquiry information shared through this website.",
-  alternates: { canonical: "/privacy-policy" },
-};
+  path: "/privacy-policy",
+});
 
 export default function Privacy() {
   return (

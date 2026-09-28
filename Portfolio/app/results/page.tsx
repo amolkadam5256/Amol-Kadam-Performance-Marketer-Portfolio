@@ -2,14 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHeader } from "@/components/common/PageHeader";
 import { GrowthDashboard } from "@/components/charts/GrowthDashboard";
+import { Breadcrumb } from "@/components/common/Breadcrumb";
 import { CTA } from "@/components/common/CTA";
 import { FAQ, resultsFaqs } from "@/components/common/FAQ";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Growth Reporting & Results",
-  description: "KokanBag campaign reporting: 1,714 WhatsApp leads, ₹22,338 spend and ~₹13 cost per lead.",
-  alternates: { canonical: "/results" },
-};
+export const metadata: Metadata = pageMeta({
+  title: "Amol Kadam Marketing Results | Paid Media, SEO & Lead Generation",
+  description:
+    "Published marketing results from Amol Kadam, including the KokanBag WhatsApp campaign: 1,714 conversations from ₹22,338 spend, June–20 August 2026.",
+  path: "/results",
+});
 
 export default function Results() {
   return (
@@ -19,6 +22,7 @@ export default function Results() {
         title="A clearer view of the growth system."
         description="The numbers below are from the published KokanBag WhatsApp campaign. Other studies are described without invented scoreboards."
       />
+      <Breadcrumb items={[{ label: "Results", href: "/results" }]} />
       <section className="ed-wrap dashboard-reveal">
         <GrowthDashboard />
       </section>
@@ -27,8 +31,8 @@ export default function Results() {
           <article>
             <span>PUBLISHED PROOF</span>
             <h2>KokanBag mango pulp</h2>
-            <p>1,714 WhatsApp leads from ₹22,338 Meta spend, June to 20 August 2026. Qualified 738 · Uncontacted 747 · Not qualified 229.</p>
-            <Link href="/case-studies/kokanbag-mango-pulp">Read the full study ↗</Link>
+            <p>1,714 WhatsApp conversations from ₹22,338 Meta spend, June to 20 August 2026. Qualified 738 · Uncontacted 747 · Not qualified 229. A “lead” here means an inbound WhatsApp conversation in that period, not a closed order.</p>
+            <Link href="/work/kokanbag-mango-pulp">Read the full study ↗</Link>
           </article>
           <article>
             <span>PAID MEDIA</span>

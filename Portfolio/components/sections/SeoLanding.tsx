@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Breadcrumb } from "@/components/common/Breadcrumb";
 import { CTA } from "@/components/common/CTA";
 import { FAQ, analyticsFaqs, defaultFaqs, googleAdsFaqs, metaAdsFaqs, seoFaqs, webDevFaqs } from "@/components/common/FAQ";
 import { PageHeader } from "@/components/common/PageHeader";
@@ -28,6 +29,7 @@ export function SeoLanding({ slug }: { slug: string }) {
           Book a consultation
         </EditorialButton>
       </PageHeader>
+      <Breadcrumb items={[{ label: page.service, href: `/${page.slug}` }]} />
 
       <section className="seo-benefits ed-wrap">
         {page.benefits.map((b, idx) => (
@@ -51,7 +53,7 @@ export function SeoLanding({ slug }: { slug: string }) {
         <p className="ed-kicker">Relevant work</p>
         {studies.map((x, idx) => (
           <motion.a
-            href={`/case-studies/${x.slug}`}
+            href={`/work/${x.slug}`}
             key={x.slug}
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}

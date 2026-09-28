@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
 import { PageHeader } from "@/components/common/PageHeader";
 import { CTA } from "@/components/common/CTA";
 import { testimonials } from "@/data/site";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Testimonials",
-  description: "Client feedback on Amol Kadam’s performance marketing, measurement and growth systems.",
-  alternates: { canonical: "/testimonials" },
-};
+export const metadata = pageMeta({
+  title: "Testimonials | Amol Kadam",
+  description: "Published client feedback on Amol Kadam’s performance marketing, measurement and growth systems.",
+  path: "/testimonials",
+});
 
 export default function Testimonials() {
   return (
